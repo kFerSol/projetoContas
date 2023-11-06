@@ -41,9 +41,6 @@ namespace ProjetoContas
             Close();
         }
 
-
-        
-
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             if (dateTimePicker1.Text == "")
@@ -58,7 +55,7 @@ namespace ProjetoContas
 
         private void tb_ContasPagarDataGridView_DoubleClick(object sender, EventArgs e)
         {
-            codigo = Convert.ToInt32(tb_ContasPagarDataGridView.CurrentRow.Cells[0].Value);
+            codigo = Convert.ToInt32(tb_ContasPagarDataGridView.CurrentRow.Cells[0].Value.ToString());
             Close();
         }
 
