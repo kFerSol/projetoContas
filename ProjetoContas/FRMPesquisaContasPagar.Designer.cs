@@ -87,7 +87,6 @@
             this.tb_ContasPagarDataGridView.ReadOnly = true;
             this.tb_ContasPagarDataGridView.Size = new System.Drawing.Size(633, 298);
             this.tb_ContasPagarDataGridView.TabIndex = 5;
-            this.tb_ContasPagarDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tb_ContasPagarDataGridView_CellContentClick);
             this.tb_ContasPagarDataGridView.DockChanged += new System.EventHandler(this.tb_ContasPagarDataGridView_DockChanged);
             this.tb_ContasPagarDataGridView.DoubleClick += new System.EventHandler(this.tb_ContasPagarDataGridView_DoubleClick);
             // 

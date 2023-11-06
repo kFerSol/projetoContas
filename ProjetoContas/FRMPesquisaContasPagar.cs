@@ -41,15 +41,8 @@ namespace ProjetoContas
             Close();
         }
 
-        private void tb_UsuarioDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-        }
-
-        private void txtPesquisa_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
@@ -59,16 +52,11 @@ namespace ProjetoContas
             }
             else
             {
-                this.tb_ContasPagarTableAdapter.FillByData(this.bd_ContasDataSet.tb_ContasPagar, "%" + dateTimePicker1.Text + "%");
+                this.tb_ContasPagarTableAdapter.FillByData(this.bd_ContasDataSet.tb_ContasPagar, dateTimePicker1.Text);
             }
         }
 
         private void tb_ContasPagarDataGridView_DoubleClick(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tb_ContasPagarDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             codigo = Convert.ToInt32(tb_ContasPagarDataGridView.CurrentRow.Cells[0].Value);
             Close();
