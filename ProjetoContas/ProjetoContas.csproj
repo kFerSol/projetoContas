@@ -135,6 +135,12 @@
     <Compile Include="FRMPesquisaFornecedor.Designer.cs">
       <DependentUpon>FRMPesquisaFornecedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMPesquisarContasReceber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMPesquisarContasReceber.Designer.cs">
+      <DependentUpon>FRMPesquisarContasReceber.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMPesquisarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMPesquisaFornecedor.resx">
       <DependentUpon>FRMPesquisaFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMPesquisarContasReceber.resx">
+      <DependentUpon>FRMPesquisarContasReceber.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMPesquisarUsuario.resx">
       <DependentUpon>FRMPesquisarUsuario.cs</DependentUpon>

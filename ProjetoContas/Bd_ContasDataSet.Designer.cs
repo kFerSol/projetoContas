@@ -4850,12 +4850,17 @@ SELECT cd_Conta, cd_Documento, ds_Documento, dt_Emissao, dt_Vencimento, vl_Docum
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT cd_Conta, cd_Documento, ds_Documento, dt_Emissao, dt_Vencimento, vl_Docume" +
                 "to, dt_Pagamento, vl_Pago, id_Cliente FROM dbo.tb_ContaReceber";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT * FROM tb_ContaReceber WHERE dt_Emissao = @data";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@data", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 0, 0, "dt_Emissao", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4877,6 +4882,42 @@ SELECT cd_Conta, cd_Documento, ds_Documento, dt_Emissao, dt_Vencimento, vl_Docum
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual Bd_ContasDataSet.tb_ContaReceberDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            Bd_ContasDataSet.tb_ContaReceberDataTable dataTable = new Bd_ContasDataSet.tb_ContaReceberDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByData(Bd_ContasDataSet.tb_ContaReceberDataTable dataTable, string data) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((data == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(data));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual Bd_ContasDataSet.tb_ContaReceberDataTable GetDataByData(string data) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((data == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(data));
+            }
             Bd_ContasDataSet.tb_ContaReceberDataTable dataTable = new Bd_ContasDataSet.tb_ContaReceberDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

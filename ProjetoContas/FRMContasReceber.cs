@@ -148,5 +148,18 @@ namespace ProjetoContas
         {
 
         }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            int cod, reg;
+            FRMPesquisarContasReceber fpcr = new FRMPesquisarContasReceber();
+            fpcr.ShowDialog();
+            cod = fpcr.getCodigo();
+            if (cod == 0)
+            {
+                reg = tb_ContaReceberBindingSource.Find("cd_Conta", cod);
+                tb_ContaReceberBindingSource.Position = reg;
+            }
+        }
     }
 }

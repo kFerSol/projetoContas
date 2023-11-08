@@ -294,3 +294,4 @@ C:\Users\aluno3\Desktop\projetoContas\ProjetoContas\obj\Debug\ProjetoContas.cspr
 C:\Users\aluno3\Desktop\projetoContas\ProjetoContas\obj\Debug\ProjetoContas.csproj.CopyComplete
 C:\Users\aluno3\Desktop\projetoContas\ProjetoContas\obj\Debug\ProjetoContas.exe
 C:\Users\aluno3\Desktop\projetoContas\ProjetoContas\obj\Debug\ProjetoContas.pdb
+C:\Users\aluno3\Desktop\projetoContas\ProjetoContas\obj\Debug\ProjetoContas.FRMPesquisarContasReceber.resources

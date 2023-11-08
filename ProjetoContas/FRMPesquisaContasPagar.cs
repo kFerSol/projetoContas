@@ -55,7 +55,7 @@ namespace ProjetoContas
 
         private void tb_ContasPagarDataGridView_DoubleClick(object sender, EventArgs e)
         {
-            codigo = Convert.ToInt32(tb_ContasPagarDataGridView.CurrentRow.Cells[0].Value.ToString());
+            codigo = Convert.ToInt32(tb_ContasPagarDataGridView.CurrentRow.Cells[0].Value);
             Close();
         }
 
