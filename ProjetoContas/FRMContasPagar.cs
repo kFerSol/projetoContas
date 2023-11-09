@@ -211,7 +211,7 @@ namespace ProjetoContas
             cod = fpcp.getCodigo();
             if(cod == 0)
             {
-                reg = tb_ContasPagarBindingSource.Find("dt_Vencimento", cod);
+                reg = tb_ContasPagarBindingSource.Find("cd_Conta", cod);
                 tb_ContasPagarBindingSource.Position = reg;
             }
         }
