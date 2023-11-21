@@ -5,16 +5,30 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoContas", "ProjetoContas\ProjetoContas.csproj", "{C986B3FF-2F8E-4F4C-B61F-94CFCBD10B3A}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TesteInstalador", "TesteInstalador\TesteInstalador.vdproj", "{2512E44F-A851-42D1-A4FA-AA0EC4E5165D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C986B3FF-2F8E-4F4C-B61F-94CFCBD10B3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C986B3FF-2F8E-4F4C-B61F-94CFCBD10B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C986B3FF-2F8E-4F4C-B61F-94CFCBD10B3A}.Debug|x86.ActiveCfg = Debug|x86
+		{C986B3FF-2F8E-4F4C-B61F-94CFCBD10B3A}.Debug|x86.Build.0 = Debug|x86
 		{C986B3FF-2F8E-4F4C-B61F-94CFCBD10B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C986B3FF-2F8E-4F4C-B61F-94CFCBD10B3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C986B3FF-2F8E-4F4C-B61F-94CFCBD10B3A}.Release|x86.ActiveCfg = Release|x86
+		{C986B3FF-2F8E-4F4C-B61F-94CFCBD10B3A}.Release|x86.Build.0 = Release|x86
+		{2512E44F-A851-42D1-A4FA-AA0EC4E5165D}.Debug|Any CPU.ActiveCfg = Debug
+		{2512E44F-A851-42D1-A4FA-AA0EC4E5165D}.Debug|x86.ActiveCfg = Debug
+		{2512E44F-A851-42D1-A4FA-AA0EC4E5165D}.Debug|x86.Build.0 = Debug
+		{2512E44F-A851-42D1-A4FA-AA0EC4E5165D}.Release|Any CPU.ActiveCfg = Release
+		{2512E44F-A851-42D1-A4FA-AA0EC4E5165D}.Release|x86.ActiveCfg = Release
+		{2512E44F-A851-42D1-A4FA-AA0EC4E5165D}.Release|x86.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
